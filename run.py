@@ -166,6 +166,7 @@ if __name__ == '__main__':
     elif args.resume:
         checkpoint = torch.load(args.resume)
         config = checkpoint['config']
+        config['cfg'] = 'saved_cv/0516_074921/checkpoints/model.cfg'
 
     else:
         raise AssertionError("Configuration file need to be specified. Add '-c config.json', for example.")
