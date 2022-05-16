@@ -63,7 +63,7 @@ def infer_main(file_path, config, checkpoint):
     inference = AudioInference(model, transforms=tsf)
     label, conf = inference.infer(file_path)
     print(label, conf)
-    inference.draw(file_path, label, conf)
+    # inference.draw(file_path, label, conf)
 
 
 def train_main(config, resume):
